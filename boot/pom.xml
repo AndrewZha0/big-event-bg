@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.kenmi</groupId>
+        <artifactId>big-event</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>big-event-bootstrap</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>boot</name>
+    <description>boot</description>
+
+    <dependencies>
+        <!-- 模块依赖 -->
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-present-api</artifactId>
+            <version>${present.api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-present-server</artifactId>
+            <version>${present.server.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-business-application</artifactId>
+            <version>${business.application.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-business-core</artifactId>
+            <version>${business.core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-infra-dal</artifactId>
+            <version>${infra.dal.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-infra-middleware</artifactId>
+            <version>${infra.middleware.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-infra-integration</artifactId>
+            <version>${infra.integration.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-infra-common</artifactId>
+            <version>${infra.common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-infra-auto</artifactId>
+            <version>${infra.auto.version}</version>
+        </dependency>
+
+        <!-- 框架依赖 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mybatis</groupId>
+                    <artifactId>mybatis-spring</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

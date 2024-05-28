@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.kenmi</groupId>
+        <artifactId>big-event</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>big-event-business-application</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>application</name>
+    <description>application</description>
+
+    <dependencies>
+        <!-- 模块依赖 -->
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-present-api</artifactId>
+            <version>${present.api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-infra-common</artifactId>
+            <version>${infra.common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenmi</groupId>
+            <artifactId>big-event-business-core</artifactId>
+            <version>${business.core.version}</version>
+        </dependency>
+        <!-- 框架依赖 -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+</project>
